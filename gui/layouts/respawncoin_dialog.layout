@@ -1,0 +1,193 @@
+WindowWidgetClass RC_Root
+{
+ ignorepointer 0
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ priority 960
+ style Default
+ font "gui/fonts/sdf_MetronBook24"
+ {
+  PanelWidgetClass RC_Background
+  {
+   visible 1
+   ignorepointer 1
+   color 0.04 0.04 0.04 0.55
+   position 0 0
+   size 1 1
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass RC_Panel
+    {
+     clipchildren 1
+     inheritalpha 0
+     ignorepointer 0
+     color 0.10 0.10 0.10 0.96
+     position 0 0
+     size 760 254
+     halign center_ref
+     valign center_ref
+     hexactsize 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass RC_Title
+      {
+       ignorepointer 1
+       position 30 10
+       size 700 32
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Respawn System"
+       font "gui/fonts/sdf_MetronBook24"
+       "text color" 1 1 1 1
+       "bold text" 1
+       "exact text" 1
+       "exact text size" 24
+       "text halign" center
+       "text valign" center
+      }
+
+      PanelWidgetClass RC_Separator
+      {
+       ignorepointer 1
+       color 0.78 0.10 0.10 1
+       position 30 48
+       size 700 2
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+      }
+
+      TextWidgetClass RC_Content
+      {
+       ignorepointer 1
+       position 40 72
+       size 680 44
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       multiline 1
+       text "You currently have 0 respawn coin(s). Do you want to spend 1 respawn coin to return to your last\ndeath location immediately?"
+       font "gui/fonts/sdf_MetronBook24"
+       "text color" 1 1 1 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" left
+       "text valign" top
+      }
+
+      TextWidgetClass RC_Reason
+      {
+       ignorepointer 1
+       position 40 126
+       size 680 44
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       multiline 1
+       text "After confirmation, you will be teleported to your last death location immediately and 1 respawn coin\nwill be deducted."
+       font "gui/fonts/sdf_MetronBook24"
+       "text color" 0.82 0.82 0.82 1
+       "exact text" 1
+       "exact text size" 14
+       "text halign" left
+       "text valign" top
+      }
+
+      ButtonWidgetClass RC_BtnConfirm
+      {
+       visible 1
+       ignorepointer 0
+       clipchildren 1
+       color 0 0 0 0
+       position 40 194
+       size 300 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Default
+       font "gui/fonts/sdf_MetronBook24"
+       {
+        PanelWidgetClass RC_BtnConfirm_panel
+        {
+         visible 1
+         ignorepointer 1
+         color 0 0 0 0.72
+         position 0 0
+         size 1 1
+         style DayZDefaultPanel
+        }
+        TextWidgetClass RC_BtnConfirm_label
+        {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         text "Confirm"
+         font "gui/fonts/sdf_MetronBook24"
+         "text color" 1 1 1 1
+         "exact text" 1
+         "exact text size" 18
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+
+      ButtonWidgetClass RC_BtnCancel
+      {
+       visible 1
+       ignorepointer 0
+       clipchildren 1
+       color 0 0 0 0
+       position 420 194
+       size 300 40
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Default
+       font "gui/fonts/sdf_MetronBook24"
+       {
+        PanelWidgetClass RC_BtnCancel_panel
+        {
+         visible 1
+         ignorepointer 1
+         color 0 0 0 0.72
+         position 0 0
+         size 1 1
+         style DayZDefaultPanel
+        }
+        TextWidgetClass RC_BtnCancel_label
+        {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         text "Cancel"
+         font "gui/fonts/sdf_MetronBook24"
+         "text color" 1 1 1 1
+         "exact text" 1
+         "exact text size" 18
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
